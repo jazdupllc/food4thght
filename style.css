@@ -138,6 +138,9 @@ body {
     margin-bottom: 30px;
 }
 
+.hero h2 {
+    color: #c9a227
+}
 .hero h1::first-line {
     color: var(--white);
 }
@@ -149,7 +152,7 @@ body {
 
     margin-bottom: 35px;
 
-    color: #dddddd;
+    color: var(--gold);
 }
 
 
@@ -2570,3 +2573,7 @@ footer {
         font-size: 3.5rem;
     }
 }
+
+/* ========================= CART ========================= */
+.add-to-cart{margin-top:18px;border:1px solid var(--gold);background:transparent;color:var(--gold);padding:11px 16px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;cursor:pointer;transition:.2s ease}.add-to-cart:hover,.add-to-cart.added{background:var(--gold);color:#111}.cart-options{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.cart-options .add-to-cart{margin-top:0;font-size:.72rem}.side-item .add-to-cart,.pan-item .add-to-cart{margin:0 0 0 14px;padding:8px 10px;font-size:.68rem}.cart-page{max-width:1100px;margin:0 auto;padding:80px 28px 120px}.cart-page h1{font-size:clamp(3rem,7vw,6rem);text-transform:uppercase;margin:8px 0 45px}.cart-item{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;gap:24px;align-items:center;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.18)}.cart-item-main h3{margin:0 0 5px}.cart-item-main span,.cart-note{opacity:.72}.qty-controls{display:flex;align-items:center;gap:12px}.qty-controls button{width:34px;height:34px;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer;font-size:1.2rem}.line-total{min-width:85px;text-align:right}.remove-cart-item{border:0;background:none;color:var(--gold);text-decoration:underline;cursor:pointer}.cart-summary{margin-left:auto;max-width:480px;padding-top:38px}.cart-summary>div:first-child{display:flex;justify-content:space-between;font-size:1.5rem;padding-bottom:18px;border-bottom:1px solid var(--gold)}.cart-note{line-height:1.6;margin:20px 0}.checkout-btn{width:100%;border:0;cursor:pointer;margin-top:12px}.secondary-cart-btn{display:block;text-align:center;background:transparent;border:1px solid var(--gold)}.empty-cart{padding:45px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
+@media(max-width:700px){.cart-item{grid-template-columns:1fr auto;gap:14px}.qty-controls{grid-column:1}.line-total{grid-column:2;grid-row:2}.remove-cart-item{grid-column:1/3;text-align:left;padding:0}.side-item,.pan-item{flex-wrap:wrap;gap:8px}.side-item .add-to-cart,.pan-item .add-to-cart{width:100%;margin:8px 0 0}.cart-page{padding:55px 20px 90px}}
