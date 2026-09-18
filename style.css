@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Miama';
+    src: url('fonts/Miama.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* =========================
    COLOR VARIABLES
@@ -2581,77 +2589,23 @@ footer {
 @media(max-width:700px){.cart-item{grid-template-columns:1fr auto;gap:14px}.qty-controls{grid-column:1}.line-total{grid-column:2;grid-row:2}.remove-cart-item{grid-column:1/3;text-align:left;padding:0}.side-item,.pan-item{flex-wrap:wrap;gap:8px}.side-item .add-to-cart,.pan-item .add-to-cart{width:100%;margin:8px 0 0}.cart-page{padding:55px 20px 90px}}
 
 /* =========================
-   TYPOGRAPHY
-   Headings = cursive
-   Everything else = clean/professional
+   CUSTOM TYPOGRAPHY
 ========================= */
-
 body {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-/* Main display/section headings only */
-h1,
-h2,
-.hero-title {
-    font-family: 'Allura', 'Brush Script MT', cursive;
-    font-weight: 400;
+h1, h2, .hero-title {
+    font-family: 'Miama', cursive;
+    font-weight: normal;
     text-transform: none;
     letter-spacing: 0;
 }
 
-/* Subheadings and smaller headings stay professional/readable */
-h3,
-h4,
-h5,
-h6,
-.section-label,
-.eyebrow,
-.hero-text,
-.menu-card-content h3,
-.ala-info h3,
-.dinner-info h3,
-.service-card h3,
-.brunch-info h3,
-.wedding-card h3,
-.build-option h3,
-.booking-rule h3,
-.contact-service-grid h3,
-.faq-item summary {
+h3, h4, h5, h6,
+.section-label, .eyebrow, .hero-text,
+nav, .menu-btn, .cta-button, .add-to-cart, .checkout-btn,
+.qty-controls button, .remove-cart-item,
+input, textarea, select, button, .price {
     font-family: 'Montserrat', Arial, sans-serif;
-}
-
-/* Functional text */
-nav,
-.menu-btn,
-.cta-button,
-.add-to-cart,
-.checkout-btn,
-.qty-controls button,
-.remove-cart-item,
-input,
-textarea,
-select,
-button,
-.price {
-    font-family: 'Montserrat', Arial, sans-serif;
-}
-
-/* Keep the Food4Thought hero treatment intact */
-.hero-title .food4thought {
-    white-space: nowrap;
-}
-
-.hero-title .four {
-    color: var(--gold);
-    font-style: normal;
-    margin: 0 .015em;
-}
-
-.hero-title .catering-word {
-    display: block;
-    color: var(--gold);
-    font-size: .55em;
-    line-height: 1;
-    margin-top: .18em;
 }
